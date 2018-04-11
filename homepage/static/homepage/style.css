@@ -9,16 +9,14 @@
 html *
 {
    font-size: 1em ;
-   color: lightBlue;
+   color: lightBlue  !important;
 
 }
 
 body {
-    background-color: #121212 ;
-
+    background-color: #121212  !important;
 
 }
-
 .about{
       padding-top: 5px;
     padding-right: 30px;

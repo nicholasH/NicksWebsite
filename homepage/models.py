@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class homepage(models.Model):
+class businessCard(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     title = models.CharField(max_length=255)
     contact_name = models.CharField(max_length=255)

@@ -1,6 +1,6 @@
 from django.http import HttpResponseRedirect, HttpResponse
 from django.views import generic
-from .models import homepage
+from .models import businessCard
 from django.shortcuts import render
 
 
@@ -13,7 +13,7 @@ def home(request):
 
 class homeView(generic.DetailView):
     template_name = 'homepage/porfolio.html'
-    model = homepage
+    model = businessCard
 
     def get_queryset(self):
         """
