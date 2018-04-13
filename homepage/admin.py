@@ -5,4 +5,7 @@ from django.contrib import admin
 
 from .models import businessCard
 
-admin.site.register(businessCard)
+class bisnessCardAdmin(admin.ModelAdmin):
+    list_display = ('email','contact_name')
+
+admin.site.register(businessCard,bisnessCardAdmin)

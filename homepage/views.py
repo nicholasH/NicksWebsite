@@ -11,19 +11,18 @@ def home(request):
     template_name = 'homepage/porfolio.html'
     print("test")
     if request.method == 'POST':
-        form = businessCardForm(request.POST)
-        print(form)
+        form = businessCardForm(data=request.POST)
         if form.is_valid():
-            email= request.Post.get("email")
+            email= request.POST.get("email")
             print("test3")
-            name = form.cleaned_data['name']
-            biz_name = form.cleaned_data['biz_name']
+            name = form.cleaned_data['contact_name']
+            biz_name = form.cleaned_data['company']
             phone_number = form.cleaned_data['phone_number']
             message  = form.cleaned_data['message']
 
-            bizcard(email= email,contact_name = name, biz_name = biz_name,phone_number = phone_number,message = message )
+            biz = bizcard(email= email ,contact_name = name, company = biz_name,phone_number = phone_number,message = message )
 
-            bizcard.save()
+            biz.save()
 
     return render(request,template_name)
 
