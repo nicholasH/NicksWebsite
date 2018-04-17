@@ -6,14 +6,10 @@
 
 
 }
-html
+html,body
 {
    font-size: 1em ;
    color: lightBlue;
-
-}
-
-body {
     background-color: #121212  !important;
 
 }

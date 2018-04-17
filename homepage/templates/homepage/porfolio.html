@@ -1,12 +1,7 @@
-{% load static %}
+{% extends "homepage/base.html" %}
+{% block content %}
 
-<link rel="stylesheet" type="text/css" href="{% static 'homepage/style.css' %}"/>
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.0/foundation.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-
+<body>
 
 <div class="navbar" style="background-color: black;">
 
@@ -66,7 +61,7 @@
         <p class="title ">contact me</p>
         <hr size="60">
 
-        <form action="" method="post">
+        <form action="#contact" method="post">
             {% csrf_token %}
 
 
@@ -82,23 +77,23 @@
                 <label for="InputEmail1">Email address</label>
 
                 <div class="col-xs-10">
-                    <input class="form-control" type="text" id="email-text-input" name="email" value="">
+                    <input class="form-control" type="text" id="email-text-input" name="email" value="" required>
                 </div>
             </div>
             <div class="form-group row">
-                <label for="InputName">Name</label>
+                <label for="InputName">Name (Optional)</label>
                 <div class="col-xs-10">
                     <input class="form-control" type="text" id="name-text-input"  name="contact_name" value="">
                 </div>
             </div>
             <div class="form-group row">
-                <label for="InputNompany">Company</label>
+                <label for="InputNompany">Company (Optional)</label>
                 <div class="col-xs-10">
                     <input class="form-control" type="text" id="company-text-input"  name="company" value="">
                 </div>
             </div>
             <div class="form-group row">
-                <label for="InputPhone">Phone Number</label>
+                <label for="InputPhone">Phone Number (Optional)</label>
                 <div class="col-xs-10">
                     <input class="form-control" type="number" id="Phone-number-input"  name="phone_number" value="">
                 </div>
@@ -106,7 +101,7 @@
             <div class="form-group row">
                 <label for="InputMessage">Message</label>
                 <div class="col-xs-10">
-                    <textarea class="form-control" id="message-text-input" rows="3" name="message" value=""></textarea>
+                    <textarea class="form-control" id="message-text-input" rows="3" name="message" value="" required></textarea>
                 </div>
                 <div class="form-group row">
                     <button type="submit" class="btn btn-primary">Submit</button>
@@ -133,5 +128,8 @@
             </ul>
         </div>
     </div>
+
+</body>
+{% endblock %}
 
 

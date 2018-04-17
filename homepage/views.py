@@ -10,6 +10,7 @@ from django.contrib import messages
 def home(request):
     template_name = 'homepage/porfolio.html'
 
+
     if request.method == 'POST':
         form = businessCardForm(data=request.POST)
         if form.is_valid():
@@ -23,6 +24,8 @@ def home(request):
 
             biz.save()
             messages.success(request, 'Your password was updated successfully!')
+
+
         else:
             messages.warning(request, 'Please correct the error below.')
 
