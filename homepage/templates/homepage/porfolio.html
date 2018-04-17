@@ -68,8 +68,19 @@
 
         <form action="" method="post">
             {% csrf_token %}
+
+
             <div class="form-group row">
+                {% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <div class="alert alert-info" role="alert" {% if message.tags %} class="{{ message.tags }}"{% endif %} >
+        <font color="black"> {{ message }}</font></div>
+    {% endfor %}
+</ul>
+{% endif %}
                 <label for="InputEmail1">Email address</label>
+
                 <div class="col-xs-10">
                     <input class="form-control" type="text" id="email-text-input" name="email" value="">
                 </div>
@@ -101,10 +112,10 @@
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
 
+
             </div>
         </form>
     </div>
-
 
 
 

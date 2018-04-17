@@ -6,10 +6,10 @@
 
 
 }
-html *
+html
 {
    font-size: 1em ;
-   color: lightBlue  !important;
+   color: lightBlue;
 
 }
 
@@ -48,4 +48,12 @@ body {
  input[type="text"]{
 
 }
+label {
 
+    color: inherit;
+}
+.input {
+    color: black
+
+
+}
