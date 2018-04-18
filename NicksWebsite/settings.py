@@ -28,12 +28,16 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+RECAPTCHA_PUBLIC_KEY = '6LfM41MUAAAAAI7I1-zRFtzSX--FZS_FaQ8rI3oU'
+RECAPTCHA_PRIVATE_KEY = settings_secret.reCapSecret
+
 
 # Application definition
 
 INSTALLED_APPS = [
     'polls.apps.PollsConfig',
     'homepage.apps.HomepageConfig',
+    "captcha",
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -111,7 +115,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'US/Pacific'
 
 USE_I18N = True
 

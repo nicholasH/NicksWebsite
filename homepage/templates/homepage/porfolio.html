@@ -1,5 +1,7 @@
 {% extends "homepage/base.html" %}
 {% block content %}
+{% load static %}
+
 
 <body>
 
@@ -103,12 +105,22 @@
                 <div class="col-xs-10">
                     <textarea class="form-control" id="message-text-input" rows="3" name="message" value="" required></textarea>
                 </div>
-                <div class="form-group row">
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
-
-
+                <button type="submit" class="btn btn-primary">Submit</button>
             </div>
+
+            <div class="form-group row">
+                <div class="col-xs-10">
+
+
+
+                    <script src='https://www.google.com/recaptcha/api.js'></script>
+                    <div class="g-recaptcha" name ="captcha" data-sitekey="6LfM41MUAAAAAI7I1-zRFtzSX--FZS_FaQ8rI3oU"></div>
+                </div>
+            </div>
+
+
+
+
         </form>
     </div>
 
