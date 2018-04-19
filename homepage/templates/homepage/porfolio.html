@@ -53,6 +53,25 @@
         <hr size="30">
 
     </div>
+    <div class="portfolio-content">
+
+        <p>
+
+            <img src="{% static "homepage/images/pdx_code_guild_logo25.png" %}" alt="PDX_CODEGUILD"/>
+
+            Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast yardarm. Pinnace holystone mizzenmast
+            quarter crow's nest nipperkin grog yardarm hempen halter furl. Swab barque interloper chantey doubloon
+            starboard grog black jack gangway rutters.
+
+            Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors.
+            Bring a spring upon her cable holystone blow the man down spanker Shiver me
+            timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm
+            spyglass sheet transom heave to.
+
+        </p>
+
+
+    </div>
 
 
 </div>
@@ -69,13 +88,13 @@
 
             <div class="form-group row">
                 {% if messages %}
-<ul class="messages">
-    {% for message in messages %}
-    <div class="alert alert-info" role="alert" {% if message.tags %} class="{{ message.tags }}"{% endif %} >
-        <font color="black"> {{ message }}</font></div>
-    {% endfor %}
-</ul>
-{% endif %}
+                <ul class="messages">
+                    {% for message in messages %}
+                    <div class="alert alert-info" role="alert" {% if message.tags %} class="{{ message.tags }}" {% endif %}>
+                        <font color="black"> {{ message }}</font></div>
+                    {% endfor %}
+                </ul>
+                {% endif %}
                 <label for="InputEmail1">Email address</label>
 
                 <div class="col-xs-10">
@@ -85,25 +104,26 @@
             <div class="form-group row">
                 <label for="InputName">Name (Optional)</label>
                 <div class="col-xs-10">
-                    <input class="form-control" type="text" id="name-text-input"  name="contact_name" value="">
+                    <input class="form-control" type="text" id="name-text-input" name="contact_name" value="">
                 </div>
             </div>
             <div class="form-group row">
                 <label for="InputNompany">Company (Optional)</label>
                 <div class="col-xs-10">
-                    <input class="form-control" type="text" id="company-text-input"  name="company" value="">
+                    <input class="form-control" type="text" id="company-text-input" name="company" value="">
                 </div>
             </div>
             <div class="form-group row">
                 <label for="InputPhone">Phone Number (Optional)</label>
                 <div class="col-xs-10">
-                    <input class="form-control" type="number" id="Phone-number-input"  name="phone_number" value="">
+                    <input class="form-control" type="number" id="Phone-number-input" name="phone_number" value="">
                 </div>
             </div>
             <div class="form-group row">
                 <label for="InputMessage">Message</label>
                 <div class="col-xs-10">
-                    <textarea class="form-control" id="message-text-input" rows="3" name="message" value="" required></textarea>
+                    <textarea class="form-control" id="message-text-input" rows="3" name="message" value=""
+                              required></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </div>
@@ -112,20 +132,15 @@
                 <div class="col-xs-10">
 
 
-
                     <script src='https://www.google.com/recaptcha/api.js'></script>
-                    <div class="g-recaptcha" name ="captcha" data-sitekey="6LfM41MUAAAAAI7I1-zRFtzSX--FZS_FaQ8rI3oU"></div>
+                    <div class="g-recaptcha" name="captcha"
+                         data-sitekey="6LfM41MUAAAAAI7I1-zRFtzSX--FZS_FaQ8rI3oU"></div>
                 </div>
             </div>
 
 
-
-
         </form>
     </div>
-
-
-
 
 
     <div class=links>

@@ -53,3 +53,10 @@ label {
 
 
 }
+.portfolio-content img {
+float: left;
+padding: 0 20px 20px 0;
+width:25%
+hight:25%
+
+}
