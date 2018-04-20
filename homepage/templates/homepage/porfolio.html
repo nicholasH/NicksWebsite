@@ -53,12 +53,15 @@
         <hr size="30">
 
     </div>
-    <div class="portfolio-content">
 
-        <p>
-
+    <div class="portfolio-content-DD">
+        <div>
             <img src="{% static "homepage/images/pdx_code_guild_logo25.png" %}" alt="PDX_CODEGUILD"/>
 
+        </div>
+        <div>
+
+            <p>
             Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast yardarm. Pinnace holystone mizzenmast
             quarter crow's nest nipperkin grog yardarm hempen halter furl. Swab barque interloper chantey doubloon
             starboard grog black jack gangway rutters.
@@ -68,23 +71,50 @@
             timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm
             spyglass sheet transom heave to.
 
-        </p>
+            </p>
 
+
+        </div>
+
+    </div>
+
+        <div class="portfolio-content-CG">
+        <div>
+            <img src="{% static "homepage/images/pdx_code_guild_logo25.png" %}" alt="PDX_CODEGUILD"/>
+
+        </div>
+        <div>
+
+            <p>
+            Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast yardarm. Pinnace holystone mizzenmast
+            quarter crow's nest nipperkin grog yardarm hempen halter furl. Swab barque interloper chantey doubloon
+            starboard grog black jack gangway rutters.
+
+            Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors.
+            Bring a spring upon her cable holystone blow the man down spanker Shiver me
+            timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm
+            spyglass sheet transom heave to.
+
+            </p>
+
+
+        </div>
 
     </div>
 
 
 </div>
 
+
+
+</div>
+
 <div class=contact id="contact">
     <div>
-
-        <p class="title ">contact me</p>
-        <hr size="60">
-
         <form action="#contact" method="post">
             {% csrf_token %}
-
+        <p class="title ">contact me</p>
+        <hr size="60">
 
             <div class="form-group row">
                 {% if messages %}

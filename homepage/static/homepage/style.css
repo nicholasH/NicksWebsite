@@ -50,13 +50,26 @@ label {
 }
 .input {
     color: black
+}
+
+.portfolio-contact{
+display: flex;
+flex-direction: column;
+}
+.portfolio-content img {
+float: right;
+padding: 0 20px 20px 0;
+
+}
+
+.portfolio-content-CG {
+display: flex;
+padding: 0 20px 20px 0;
 
 
 }
-.portfolio-content img {
-float: left;
+.portfolio-content-DD {
+display: flex;
 padding: 0 20px 20px 0;
-width:25%
-hight:25%
 
 }
